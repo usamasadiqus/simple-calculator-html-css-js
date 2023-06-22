@@ -5,25 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simple Calculator - JavaScript</title>
 
+    <!-- Favicon -->
+
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico" />
+
     <!-- Custom CSS -->
+
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
     <!-- Heading -->
+
     <div class="heading">
       <h1>Simple Calculator</h1>
     </div>
+
     <!-- End Heading -->
 
     <!-- Calculator -->
+
     <div class="calculator">
       <!-- Result -->
+
       <div class="result">
         <input type="text" id="result" disabled />
       </div>
+
       <!-- End Result -->
 
       <!-- Buttons -->
+
       <div class="buttons">
         <div class="btn">
           <input
@@ -32,6 +43,12 @@
             class="lightGrey"
             value="C"
             onclick="clearValues()"
+          />
+          <input
+            type="button"
+            class="lightGrey"
+            value=""
+            onclick="removeEl()"
           />
           <input
             type="button"
@@ -129,11 +146,22 @@
           <input type="button" class="darkGrey" value="=" onclick="answer()" />
         </div>
       </div>
+
       <!-- End Buttons -->
     </div>
+
     <!-- End Calculator -->
 
+    <!-- Heading -->
+
+    <div class="heading">
+      <h1>By Usama Sadiq</h1>
+    </div>
+
+    <!-- End Heading -->
+
     <!-- Custom JS -->
+
     <script src="assets/js/app.js" type="module"></script>
   </body>
 </html>
