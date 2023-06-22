@@ -39,16 +39,21 @@
         <div class="btn">
           <input
             type="button"
-            id="longBtn"
             class="lightGrey"
-            value="C"
+            value="AC"
             onclick="clearValues()"
           />
           <input
             type="button"
             class="lightGrey"
-            value=""
+            value="C"
             onclick="removeEl()"
+          />
+          <input
+            type="button"
+            class="lightGrey"
+            value="%"
+            onclick="getValue('%')"
           />
           <input
             type="button"
@@ -143,7 +148,7 @@
             value="0"
             onclick="getValue('0')"
           />
-          <input type="button" class="darkGrey" value="=" onclick="answer()" />
+          <input type="button" class="orange" value="=" onclick="answer()" />
         </div>
       </div>
 

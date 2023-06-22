@@ -41,4 +41,68 @@ body {
   border-radius: 1.875em;
 }
 
+.calculator > .result {
+  height: 40%;
+}
+
+.calculator > .result > input[type="text"] {
+  width: 85%;
+  height: 50%;
+  text-align: end;
+  padding: 0.628em;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #fff;
+  font-size: 2.188em;
+  font-weight: 600;
+  padding-top: 4em;
+  font-family: "Urbanist", sans-serif;
+}
+
+.calculator > .buttons {
+  height: 60%;
+}
+
+.calculator > .buttons > .btn {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.calculator > .buttons > .btn > input[type="button"] {
+  width: 3.125rem;
+  padding: 0.75em;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  margin: 0.438em 0;
+  font-size: 1.125rem;
+  font-weight: 600;
+  transition: 0.4s all;
+}
+
+.calculator > .buttons > .btn > input[type="button"]:active {
+  font-size: 0.938em;
+}
+
+.calculator > .buttons > .btn > input[type="button"].darkGrey {
+  background-color: #323232;
+  color: #ffffff;
+}
+
+.calculator > .buttons > .btn > input[type="button"].lightGrey {
+  background-color: #a5a5a5;
+  color: #ffffff;
+}
+
+.calculator > .buttons > .btn > input[type="button"].orange {
+  background-color: #f09509;
+  color: #ffffff;
+}
+
+.calculator > .buttons > .btn > #longBtn {
+  width: 63%;
+  border-radius: 2.5em;
+}
+
 /* End Calculator */
