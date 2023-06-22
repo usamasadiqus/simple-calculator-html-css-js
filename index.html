@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Calculator - JavaScript</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Heading -->
+    <div class="heading">
+      <h1>Simple Calculator</h1>
+    </div>
+    <!-- End Heading -->
+
+    <!-- Calculator -->
+    <div class="calculator">
+      <!-- Result -->
+      <div class="result">
+        <input type="text" id="result" disabled />
+      </div>
+      <!-- End Result -->
+
+      <!-- Buttons -->
+      <div class="buttons">
+        <div class="btn">
+          <input
+            type="button"
+            id="longBtn"
+            class="lightGrey"
+            value="C"
+            onclick="clearValues()"
+          />
+          <input
+            type="button"
+            class="orange"
+            value="/"
+            onclick="getValue('/')"
+          />
+        </div>
+        <div class="btn">
+          <input
+            type="button"
+            class="darkGrey"
+            value="7"
+            onclick="getValue('7')"
+          />
+          <input
+            type="button"
+            class="darkGrey"
+            value="8"
+            onclick="getValue('8')"
+          />
+          <input
+            type="button"
+            class="darkGrey"
+            value="9"
+            onclick="getValue('9')"
+          />
+          <input
+            type="button"
+            class="orange"
+            value="*"
+            onclick="getValue('*')"
+          />
+        </div>
+        <div class="btn">
+          <input
+            type="button"
+            class="darkGrey"
+            value="4"
+            onclick="getValue('4')"
+          />
+          <input
+            type="button"
+            class="darkGrey"
+            value="5"
+            onclick="getValue('5')"
+          />
+          <input
+            type="button"
+            class="darkGrey"
+            value="6"
+            onclick="getValue('6')"
+          />
+          <input
+            type="button"
+            class="orange"
+            value="-"
+            onclick="getValue('-')"
+          />
+        </div>
+        <div class="btn">
+          <input
+            type="button"
+            class="darkGrey"
+            value="1"
+            onclick="getValue('1')"
+          />
+          <input
+            type="button"
+            class="darkGrey"
+            value="2"
+            onclick="getValue('2')"
+          />
+          <input
+            type="button"
+            class="darkGrey"
+            value="3"
+            onclick="getValue('3')"
+          />
+          <input
+            type="button"
+            class="orange"
+            value="+"
+            onclick="getValue('+')"
+          />
+        </div>
+        <div class="btn">
+          <input
+            type="button"
+            id="longBtn"
+            class="darkGrey"
+            value="0"
+            onclick="getValue('0')"
+          />
+          <input type="button" class="darkGrey" value="=" onclick="answer()" />
+        </div>
+      </div>
+      <!-- End Buttons -->
+    </div>
+    <!-- End Calculator -->
+
+    <!-- Custom JS -->
+    <script src="assets/js/app.js" type="module"></script>
+  </body>
+</html>
