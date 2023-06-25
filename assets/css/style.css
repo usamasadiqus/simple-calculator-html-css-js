@@ -11,7 +11,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  row-gap: 2rem;
   background-color: #1e1e1e;
 }
 
@@ -38,6 +37,7 @@ body {
   box-shadow: 0 0 1.25em rgba(255, 255, 255, 0.5);
   width: 18.75em;
   height: 70vh;
+  margin: 2em 0;
   border-radius: 1.875em;
 }
 
@@ -69,7 +69,7 @@ body {
   justify-content: space-evenly;
 }
 
-.calculator > .buttons > .btn > input[type="button"] {
+.calculator > .buttons > .btn > input {
   width: 3.125rem;
   padding: 0.75em;
   border-radius: 50%;
@@ -81,26 +81,26 @@ body {
   transition: 0.4s all;
 }
 
-.calculator > .buttons > .btn > input[type="button"]:active {
+.calculator > .buttons > .btn > input:active {
   font-size: 0.938em;
 }
 
-.calculator > .buttons > .btn > input[type="button"].darkGrey {
+.calculator > .buttons > .btn > .darkGrey {
   background-color: #323232;
   color: #ffffff;
 }
 
-.calculator > .buttons > .btn > input[type="button"].lightGrey {
+.calculator > .buttons > .btn > .lightGrey {
   background-color: #a5a5a5;
   color: #ffffff;
 }
 
-.calculator > .buttons > .btn > input[type="button"].orange {
+.calculator > .buttons > .btn > .orange {
   background-color: #f09509;
   color: #ffffff;
 }
 
-.calculator > .buttons > .btn > #longBtn {
+.calculator > .buttons > .btn > .darkGrey.longBtn {
   width: 63%;
   border-radius: 2.5em;
 }
