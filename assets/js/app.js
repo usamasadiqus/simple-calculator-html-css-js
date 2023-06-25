@@ -1,17 +1,20 @@
-let result = document.querySelector("#result");
+const result = document.querySelector("#result");
 
-function getValue(num) {
-  result.value += num;
-}
-
-function removeEl() {
-  result.value = result.value.toString().slice(0, -1);
-}
-
-function clearValues() {
-  result.value = "";
-}
-
-function answer() {
-  result.value = eval(result.value);
-}
+const acCBtn = document.querySelector("#AC");
+const cBtn = document.querySelector("#C");
+const percentageBtn = document.querySelector("#%");
+const divideBtn = document.querySelector("#/");
+const sevenBtn = document.querySelector("#7");
+const eightBtn = document.querySelector("#8");
+const nineBtn = document.querySelector("#9");
+const multiplyBtn = document.querySelector("#*");
+const fourBtn = document.querySelector("#4");
+const fiveBtn = document.querySelector("#5");
+const sixBtn = document.querySelector("#6");
+const substractBtn = document.querySelector("#-");
+const oneBtn = document.querySelector("#1");
+const twoBtn = document.querySelector("#2");
+const threeBtn = document.querySelector("#3");
+const addBtn = document.querySelector("#+");
+const zeroBtn = document.querySelector("#0");
+const equalBtn = document.querySelector("#=");
